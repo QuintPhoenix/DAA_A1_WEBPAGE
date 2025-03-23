@@ -25,6 +25,27 @@ if selected == "Readme":
     st.write("2. The Tomita algorithm")
     st.write("3. The Chiba-Nishizeki algorithm")
 
+elif selected=="Dataset Exploration":
+    st.title("Dataset Exploration")
+    st.header("Dataset 1: Email-Enron")
+    st.write("The network models email interactions within Enron, where nodes represent individual email addresses and edges signify that at least one email was exchanged between them. Its high clustering coefficient reflects dense local connections, making it a useful dataset for analyzing communication structures within organizations. Researchers can leverage it to uncover patterns like tightly connected groups or clusters.")
+    st.write("No. of Nodes = 36692")
+    st.write("No. of Edges = 183,831")
+    st.image("Email-enron_dataset.png", caption="Dataset-1", use_container_width=True)
+
+    st.header("Dataset 2: as-Skitter")
+    st.write("The Skitter Internet Topology Dataset is a comprehensive dataset that maps the structure of the internet as a graph. ")
+    st.write("No. of Nodes = 1696415")
+    st.write("No. of Edges = 11095298")
+    st.image("as-Skitter_dataset.png", caption="Dataset-2", use_container_width=True)
+    
+    st.header("Dataset 3: Wiki-vote")
+    st.write("This dataset captures voting behavior in Wikipedia administrator elections, where connections indicate votes cast between users. Due to its relatively low clustering coefficient, it exhibits weaker local connectivity. It serves as a valuable resource for studying social dynamics and decision-making within online communities.")
+    st.write("No. of Nodes = 7115")
+    st.write("No. of Edges = 103,689")
+    st.image("Wiki-vote_dataset.png", caption="Dataset-3", use_container_width=True)
+
+
 elif selected == "Tomita":
     st.title("Tomita Algorithm")
 
