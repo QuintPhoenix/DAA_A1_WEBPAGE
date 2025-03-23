@@ -75,6 +75,9 @@ elif selected == "Tomita":
             fi
     end of EXPAND
     ''', language='pascal')
+    st.write("Run Time Comparision b/w all three Datasets:")
+    st.write("Time Histogram:")
+    st.image("images/tomita_time.png")
 
 elif selected == "Chiba":
     st.title("Chiba-Nishizeki Algorithm")
@@ -160,6 +163,9 @@ elif selected == "Chiba":
     end; {of CLIQUE};
 
     ''', language='pascal')
+    st.write("Run Time Comparision b/w all three Datasets:")
+    st.write("Time Histogram:")
+    st.image("images/chiba_time.png")
 
 elif selected == "ELS":
     st.title("ELS Algorithm")
