@@ -254,7 +254,6 @@ elif selected == "ELS":
 
 elif selected == "Results":
     st.title("Results")
-    st.header("Dataset used here")
     st.header("Dataset-1 : Email_Enron")
     st.write("Nodes = 36692, Undirected Edges = 183831")
     st.write( "Largest size Clique = 20")
