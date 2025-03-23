@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 with st.sidebar:
     selected = option_menu(
         menu_title="Navigation",
-        options=["Readme", "Tomita", "Chiba", "ELS", "Results"],
+        options=["Readme", "Dataset Exploration", "Tomita", "ELS", "Chiba"],
         #icons=["file-text", "geo-alt", "map", "lightning"],  # Optional: Bootstrap icons
         menu_icon="list",  # Optional: Menu icon
         default_index=0,  # Default selected index
@@ -178,39 +178,29 @@ elif selected == "ELS":
         end for
     ''', language='pascal')
 
-    st.write("Test_Case1")
-    st.write("Graph defined : n = 36692, m = 367662 ")
-    st.write("Execution Time: 8394 ms")
-    st.write("Total Number of Maximal Cliques: 226859")
-    st.write("Clique Size Histogram:")
-    st.image("output2_histogram.png")
-
-    st.write("Test_Case2")
-    st.write("Graph defined : n = 1696415, m = 11095298")
-    st.write("Execution Time: ")
-    st.write("Total Number of Maximal Cliques: ")
-    st.write("Clique Size Histogram:")
-    #st.image()
-
-    st.write("Test_Case3")
-    st.write("Graph defined : n = 7115, m = 103689")
-    st.write("Execution Time: 9922 ms")
-    st.write("Total Number of Maximal Cliques: 459002")
-    st.write("Clique Size Histogram:")
-    st.image("output3_histogram.png")
+    st.write("Run Time Comparision b/w all three Datasets:")
+    st.write("Time Histogram:")
+    st.image("bron_time.png")
 
 
 elif selected == "Results":
     st.title("Results")
-    st.header("Datasets")
-    st.write("dataset-1 = wiki-Vote")
-    st.write("dataset-2 = Email_Enron")
-    st.write("dataset-3 = as-Skitter")
+    st.header("Dataset used here")
+    st.write("dataset-1 = Email_Enron")
+    st.write("dataset-2 = as-Skitter")
+    st.write("dataset-3 = wiki-Vote")
     st.header("Dataset-1")
     st.write("Nodes = 36692, Undirected Edges = 183831")
-    st.write("Execution Time: 109638 ms")
     st.write( "Largest size Clique = 20")
     st.write("Total Number of Maximal Cliques: 226859")
-    st.image("images/wiki-Vote_histogram.png", caption="Dataset-1", use_container_width=True)
-    st.image("images/email-Enron_histogram.png", caption="Dataset-2", use_container_width=True)
-    st.image("images/as-Skitter_histogram.png", caption="Dataset-3", use_container_width= True)
+    st.image("output2_histogram.png", caption="Dataset-1", use_container_width=True)
+    st.header("Dataset-2")
+    st.write("Nodes = 36692, Undirected Edges = 183831")
+    st.write( "Largest size Clique = 67")
+    st.write("Total Number of Maximal Cliques: 226859")
+    st.image("clique_size_histogram.png", caption="Dataset-2", use_container_width=True)
+    st.header("Dataset-3")
+    st.write("Nodes = 36692, Undirected Edges = 183831")
+    st.write( "Largest size Clique = 17")
+    st.write("Total Number of Maximal Cliques: 226859")
+    st.image("output3_histogram.png", caption="Dataset-3", use_container_width=True)
