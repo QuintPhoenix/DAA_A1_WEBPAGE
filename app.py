@@ -216,7 +216,7 @@ elif selected == "ELS":
 
     st.write("Run Time Comparision b/w all three Datasets:")
     st.write("Time Histogram:")
-    st.image("bron_time.png")
+    st.image("images/bron_time.png")
 
 
 elif selected == "Results":
