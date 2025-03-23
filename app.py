@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 with st.sidebar:
     selected = option_menu(
         menu_title="Navigation",
-        options=["Readme", "Dataset Exploration", "Tomita", "ELS", "Chiba"],
+        options=["Readme", "Dataset Exploration", "Tomita", "ELS", "Chiba", "Results"],
         #icons=["file-text", "geo-alt", "map", "lightning"],  # Optional: Bootstrap icons
         menu_icon="list",  # Optional: Menu icon
         default_index=0,  # Default selected index
@@ -262,14 +262,14 @@ elif selected == "Results":
     st.write("Nodes = 36692, Undirected Edges = 183831")
     st.write( "Largest size Clique = 20")
     st.write("Total Number of Maximal Cliques: 226859")
-    st.image("output2_histogram.png", caption="Dataset-1", use_container_width=True)
+    st.image("images/email-Enron_histogram.png", caption="Dataset-1", use_container_width=True)
     st.header("Dataset-2")
     st.write("Nodes = 36692, Undirected Edges = 183831")
     st.write( "Largest size Clique = 67")
     st.write("Total Number of Maximal Cliques: 226859")
-    st.image("clique_size_histogram.png", caption="Dataset-2", use_container_width=True)
+    st.image("images/as-Skitter_histogram.png", caption="Dataset-2", use_container_width=True)
     st.header("Dataset-3")
     st.write("Nodes = 36692, Undirected Edges = 183831")
     st.write( "Largest size Clique = 17")
     st.write("Total Number of Maximal Cliques: 226859")
-    st.image("output3_histogram.png", caption="Dataset-3", use_container_width=True)
+    st.image("images/wiki-Vote_histogram.png", caption="Dataset-3", use_container_width=True)
