@@ -66,7 +66,7 @@ elif selected == "Algorithm 1:":
 
     st.header("Time Complexity")
     st.write("The worst-case time complexity is:")
-    st.image(r"images\Screenshot 2025-04-28 215409.png", caption="Dataset-3", use_container_width=True)
+    st.image("images\Screenshot 2025-04-28 215409.png", caption="Dataset-3", use_container_width=True)
     st.write("- n is the number of vertices")
     st.write("- d is the maximum degree of any vertex")
     st.write("- |Λ∣ denotes the number of (h-1)-clique instances in the graph.")
