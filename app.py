@@ -19,14 +19,6 @@ if selected == "Readme":
     st.write('Y Sai Shashank\t\t2022A7PS0061H')
     st.write('Pulin Patel\t\t2022A7PS1539H')
     st.write('Tanish Patel\t\t2022A7PS0103H')
-    st.title("Readme")
-    st.write(
-        "A maximal clique is a complete subgraph (where every pair of vertices is connected by an edge) that cannot be extended by including any additional vertex. Finding all maximal cliques in a graph is a fundamental problem in graph theory with applications in social network analysis, bioinformatics, document clustering, and e-commerce.")
-
-    st.write(
-        "The problem of listing all maximal cliques is challenging because the number of maximal cliques can be exponential in the worst case. However, many real-world graphs are sparse, meaning they have relatively few edges compared to the maximum possible number. This sparsity can be measured using a graph parameter called degeneracy.")
-
-    st.write("This application implements three different algorithms for finding all maximal cliques:")
     st.write("Algorithm 1: Exact Densest Subgraph Discovery using Flow Network")
     st.write("Algorithm 4: Core-based exact")
 
