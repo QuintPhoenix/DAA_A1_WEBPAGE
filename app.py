@@ -36,19 +36,19 @@ elif selected=="Dataset Exploration":
     st.write("The As-733 dataset represents an Internet Autonomous Systems (AS) topology, with 1,486 nodes and 3,172 edges, capturing how different systems are connected at the network layer.")
     st.write("No. of Nodes = 1486")
     st.write("No. of Edges = 3172")
-    st.image(r"images\Screenshot 2025-04-28 213141.png", caption="Dataset-1", use_container_width=True)
+    st.image(r"images/Screenshot 2025-04-28 213141.png", caption="Dataset-1", use_container_width=True)
 
     st.header("Dataset 2: Yeast")
     st.write("The Yeast dataset models a biological network, containing 1,116 proteins (vertices) and 2,148 interactions (edges), used to study functional modules; it has no 4, 5, or 6-cliques. ")
     st.write("No. of Nodes = 1116")
     st.write("No. of Edges = 2148")
-    st.image(r"images\Screenshot 2025-04-28 213343.png", caption="Dataset-2", use_container_width=True)
+    st.image(r"images/Screenshot 2025-04-28 213343.png", caption="Dataset-2", use_container_width=True)
     
     st.header("Dataset 3: Netscience")
     st.write("The Netscience dataset is a co-authorship network in network science research, containing 1,589 vertices and 2,742 edges. It captures collaborations between scientists, and is relatively small but features dense regions, making it useful for testing densest subgraph discovery over edges, triangles, and small cliques​.")
     st.write("No. of Nodes = 1589")
     st.write("No. of Edges = 2742")
-    st.image(r"images\Screenshot 2025-04-28 213523.png", caption="Dataset-3", use_container_width=True)
+    st.image(r"images/Screenshot 2025-04-28 213523.png", caption="Dataset-3", use_container_width=True)
 
 
 elif selected == "Algorithm 1:":
@@ -118,7 +118,7 @@ elif selected == "Algorithm 4:":
    
     
     st.header("Time Complexity")
-    st.image(r"images\Screenshot 2025-04-28 220946.png")
+    st.image(r"images/Screenshot 2025-04-28 220946.png")
     st.write("The time complexity of Algorithm-4 is driven by two main factors:")
     st.write("- **h-Clique Enumeration:** Before decomposition, the algorithm must enumerate all possible h-cliques (or pattern instances) in the graph. The worst-case number of cliques for each vertex is related to the maximum vertex degree (d).")
     st.write("- **Core Decomposition Process:** The iterative removal of vertices and updating of their neighbors' clique-degrees during the core decomposition.")
