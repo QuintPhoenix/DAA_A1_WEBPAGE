@@ -162,7 +162,7 @@ elif selected == "Chiba":
                             then if (S[y] + k - 1 = p) and (y ≥ jₖ₋₁) then FLAG := false;
                 {case S(y) = 0}
                 if C ∩ N(i) ≠ ∅ then
-                    for each vertex y ∉ C ⋃ {i} such that y < i, T[y] = |C ∩ N(i)|, and S[y] = 0
+                    for each vertex y ∉ C U {i} such that y < i, T[y] = |C ∩ N(i)|, and S[y] = 0
                         do if jₚ < y then FLAG := false;
                         else if jₚ < i - 1 then FLAG := false;
                 {reinitialize S and T}
